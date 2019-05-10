@@ -1,0 +1,6 @@
+﻿~~~~~~~~~~~~~ECOSPACE PARKING LOT APP~~~~~~~~~~~~~~~~~~~
+TO ADD A BIKE---------------->PRESS 1
+TO ADD A CAR----------------->PRESS 2
+TO ADD A SUV----------------->PRESS 3
+GENERATE BILL---------------->PRESS 4
+TO GENERATE STATISTICS------->PRESS 5
