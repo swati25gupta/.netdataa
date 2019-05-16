@@ -1,0 +1,50 @@
+﻿<Window x:Class="SampleWpfApp.DatabaseProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="DatabaseProgram" Height="450" Width="800" Loaded="onLoad">
+    <Grid Name="grdContent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="2" Grid.Column="0" Grid.Row="0">
+            <Label>List of Employees with us...</Label>
+            <ListBox Name="lstNames" ItemsSource="{Binding ElementName=grdContent, Path=DataContext}" DisplayMemberPath="EmpName"/>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="0" DataContext="{Binding ElementName=lstNames, Path=SelectedItem}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="40">Details of the Employee</Label>
+            <Label HorizontalAlignment="Right" Grid.Column="0" Grid.Row="1">Enter the ID</Label>
+            <Label HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2">Enter the Name</Label>
+            <Label  HorizontalAlignment="Right" Grid.Column="0" Grid.Row="3">Enter the Address</Label>
+            <Label HorizontalAlignment="Right" Grid.Column="0" Grid.Row="4">Enter the Salary</Label>
+            <TextBox Text="{Binding Path=EmpID}" Grid.Column="1" Grid.Row="1" MinWidth="200" Name="txtID"/>
+            <TextBox Text="{Binding Path=EmpName}" Grid.Column="1" Grid.Row="2" MinWidth="200" Name="txtName"/>
+            <TextBox Text="{Binding Path=EmpAddress}" Grid.Column="1" Grid.Row="3" MinWidth="200" Name="txtAddress"/>
+            <TextBox Text="{Binding Path=EmpSalary}" Grid.Column="1" Grid.Row="4" MinWidth="200" Name="txtSalary"/>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="2" Grid.Row="5" Grid.ColumnSpan="2">
+                <Button>Update</Button>
+                <Button>Delete</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

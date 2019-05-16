@@ -1,0 +1,7 @@
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\bin\Debug\SampleConApp.exe.config
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\bin\Debug\SampleConApp.exe
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\bin\Debug\SampleConApp.pdb
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\obj\Debug\SampleConApp.csprojAssemblyReference.cache
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\obj\Debug\SampleConApp.csproj.CoreCompileInputs.cache
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\obj\Debug\SampleConApp.exe
+C:\Phaniraj\.NET Apps\DotnetFeb2019\SampleConApp\obj\Debug\SampleConApp.pdb
