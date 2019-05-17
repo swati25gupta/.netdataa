@@ -1,0 +1,7 @@
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Phaniraj\.NET Apps\FinalSolution\ProductRepositoryApp\bin\roslyn\VBCSCompiler.exe

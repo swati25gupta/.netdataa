@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    var options = new AjaxOptions
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "divArea"
+    };
+}
+
+<h2>Welcome to Product Repository System</h2>
+<div style="margin:4px; padding:4px;">
+    @Ajax.ActionLink("Display All", "AllItems", options)
+    @Ajax.ActionLink("Add New", "AddItem", options)
+</div>
+<p>
+    This App is designed for users of our Organization to perform data centric operations on Our products that we sell to 3rd Party Brokers like Amazon, FlipKart, Big Basket and many more....
+</p>
+<div>
+    @using (Ajax.BeginForm("search", options))
+    {
+        @Html.Editor("searchItem") <button>Search</button>
+    }
+</div>
+<div style="border:2px solid grey; border-radius:5px; margin:4px; padding:4px;" id="divArea">
+    <p>Something like this....</p>
+</div>
+

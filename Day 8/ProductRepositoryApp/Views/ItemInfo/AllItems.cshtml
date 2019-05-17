@@ -1,0 +1,18 @@
+﻿@model List<Entities.Item>
+
+<h1>List of Products with us!!!!</h1>
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>Product Details</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td style="border:2px dotted lightblue">
+                <h2 style="color:darkmagenta">@item.Name</h2>
+                <p>Rs. @item.Price</p>
+                <p>Rs.@item.Quantity</p>
+            </td>
+        </tr>
+    }
+</table> 

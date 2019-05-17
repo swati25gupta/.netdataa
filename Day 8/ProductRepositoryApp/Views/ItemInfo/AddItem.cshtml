@@ -1,0 +1,14 @@
+﻿@model Entities.Item
+
+<h1>Details of the Product to Add</h1>
+@using (Html.BeginForm())
+{
+<div>
+    <p>Enter the ID: @Html.EditorFor(i => i.ID)</p>
+    <p>Enter the Name: @Html.EditorFor(i => i.Name)</p>
+    <p>Enter the Cost: @Html.EditorFor(i => i.Price)</p>
+    <p>Enter the Quantity: @Html.EditorFor(i => i.Quantity)</p>
+    <p><button class="btn btn-danger">Save Changes</button></p>
+</div>
+}
+
